@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to my blog</title>
+    <style type="text/css">
+    	
+    			.elements li{
+    				 display: inline-block;
+    				  margin: 0 10px;
+    				  font-size: 24px;
+    				  font-weight: bolder;
+    			}
+
+    </style>
+</head>
+<body>
+<ol class="elements">
+    <% infos.forEach(function(info) { %>
+        <li><%= info.Year %> </li>
+        <li><%= info.Population %> </li>
+        <li><%= info.GR %> </li>
+        <li><%= info.Growth %> </li>
+        <br><br>
+
+    <% }); %>
+</ol>
+</table>
+</body>
+</html>
